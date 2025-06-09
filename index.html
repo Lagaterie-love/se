@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Gâterie - Gourmetmat i Koppar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #B8860B 0%, #FFE135 25%, #FFEB3B 50%, #FFF59D 75%, #FFFDE7 100%);
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+        }
+       
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(184, 134, 11, 0.9) 0%, rgba(255, 225, 53, 0.8) 50%, rgba(255, 253, 231, 0.7) 100%);
+        }
+       
+        .card-gradient {
+            background: linear-gradient(145deg, rgba(255, 235, 59, 0.3) 0%, rgba(255, 253, 231, 0.8) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 235, 59, 0.4);
+        }
+       
+        .btn-gradient {
+            background: linear-gradient(45deg, #B8860B 0%, #DAA520 100%);
+            transition: all 0.3s ease;
+        }
+       
+        .btn-gradient:hover {
+            background: linear-gradient(45deg, #DAA520 0%, #FFD700 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(184, 134, 11, 0.3);
+        }
+       
+        .section-fade {
+            background: linear-gradient(180deg, rgba(255, 253, 231, 0.6) 0%, rgba(255, 235, 59, 0.4) 100%);
+        }
+       
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+       
+        .fade-text {
+            background: linear-gradient(45deg, #8B4513 0%, #B8860B 50%, #DAA520 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+       
+        .social-icon {
+            background: linear-gradient(45deg, #B8860B 0%, #DAA520 100%);
+            transition: all 0.3s ease;
+        }
+       
+        .social-icon:hover {
+            background: linear-gradient(45deg, #DAA520 0%, #FFD700 100%);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="hero-gradient shadow-lg">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center mb-6 md:mb-0">
+                    <img src="https://page1.genspark.site/v1/base64_upload/eb4faff1c582b45d0455b7fc6fb24ecf" alt="La Gâterie Logo" class="w-16 h-16 mr-4 rounded-lg shadow-md">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold text-amber-900 mb-2">La Gâterie</h1>
+                        <p class="text-amber-800 text-lg font-medium">Gourmetmat i eleganta koppar</p>
+                    </div>
+                </div>
+                <nav class="flex space-x-6">
+                    <a href="#produkter" class="text-amber-800 hover:text-amber-900 font-medium transition-colors">Produkter</a>
+                    <a href="#om-oss" class="text-amber-800 hover:text-amber-900 font-medium transition-colors">Om Oss</a>
+                    <a href="#kontakt" class="text-amber-800 hover:text-amber-900 font-medium transition-colors">Kontakt</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold fade-text mb-6">Upptäck våra unika gourmetkoppar</h2>
+            <p class="text-xl text-amber-800 mb-8 max-w-2xl mx-auto">
+                Perfekt sammansatta smaker i eleganta koppar - från veganska delikatesser till klassiska kombinationer
+            </p>
+            <div class="max-w-4xl mx-auto">
+                <img src="https://page1.genspark.site/v1/base64_upload/293f152f068874cb74b8266697ad6dfe" alt="La Gâterie Produkter" class="w-full rounded-2xl shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Produkter Section -->
+    <section id="produkter" class="py-16 section-fade">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center fade-text mb-12">Våra Produkter</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Vegan -->
+                <div class="card-gradient rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-center">
+                        <i class="fas fa-leaf text-4xl text-green-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-amber-900 mb-4">Vegan</h3>
+                        <p class="text-amber-800 mb-6 leading-relaxed">
+                            Våra veganska koppar innehåller färska frukter, grönsaker, nötter och vegetabiliska delikatesser på pinnar.
+                            Perfekt för dig som vill njuta av hälsosam och smakrik mat.
+                        </p>
+                        <div class="text-3xl font-bold text-amber-900 mb-6">99 kr</div>
+                        <button class="btn-gradient text-white px-8 py-3 rounded-lg font-semibold shadow-lg">
+                            Beställ Nu
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Klassisk -->
+                <div class="card-gradient rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-center">
+                        <i class="fas fa-crown text-4xl text-amber-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-amber-900 mb-4">Klassisk</h3>
+                        <p class="text-amber-800 mb-6 leading-relaxed">
+                            Vår klassiska kopp med charkuterier, ostar, frukter och tillbehör på pinnar.
+                            En perfekt blandning av traditionella smaker för alla tillfällen.
+                        </p>
+                        <div class="text-3xl font-bold text-amber-900 mb-6">99 kr</div>
+                        <button class="btn-gradient text-white px-8 py-3 rounded-lg font-semibold shadow-lg">
+                            Beställ Nu
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Vegetarisk -->
+                <div class="card-gradient rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-center">
+                        <i class="fas fa-carrot text-4xl text-orange-500 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-amber-900 mb-4">Vegetarisk</h3>
+                        <p class="text-amber-800 mb-6 leading-relaxed">
+                            Våra vegetariska koppar med ostar, frukter, grönsaker och vegetariska delikatesser på pinnar.
+                            Rik på smak och perfekt för vegetarianer.
+                        </p>
+                        <div class="text-3xl font-bold text-amber-900 mb-6">99 kr</div>
+                        <button class="btn-gradient text-white px-8 py-3 rounded-lg font-semibold shadow-lg">
+                            Beställ Nu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Om Oss Section -->
+    <section id="om-oss" class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center fade-text mb-12">Om La Gâterie</h2>
+                <div class="card-gradient rounded-2xl p-8 md:p-12 shadow-xl">
+                    <div class="text-center mb-8">
+                        <img src="https://page1.genspark.site/v1/base64_upload/eb4faff1c582b45d0455b7fc6fb24ecf" alt="La Gâterie" class="w-24 h-24 mx-auto rounded-full shadow-lg mb-6">
+                        <p class="text-lg text-amber-800 leading-relaxed mb-8">
+                            Vi på La Gâterie skapar unika gourmetupplevelser i eleganta koppar. Våra produkter kombinerar
+                            färska ingredienser, kreativa presentationer och exceptionell smak. Varje kopp är noggrant
+                            sammansatt för att ge dig en minnesvärd smakupplevelse.
+                        </p>
+                    </div>
+                   
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-amber-900 mb-4">
+                                <i class="fas fa-utensils mr-3"></i>Vårt Koncept
+                            </h3>
+                            <p class="text-amber-800 leading-relaxed">
+                                Alla våra koppar innehåller noggrant utvalda ingredienser serverade på eleganta pinnar.
+                                Vi erbjuder veganska, klassiska och vegetariska alternativ för alla smaker och preferenser.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-amber-900 mb-4">
+                                <i class="fas fa-heart mr-3"></i>Vår Vision
+                            </h3>
+                            <p class="text-amber-800 leading-relaxed">
+                                Att göra gourmetmat tillgänglig och bekväm för alla. Våra koppar är perfekta för picknick,
+                                events, luncher eller när du helt enkelt vill unna dig något extra gott.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt" class="py-16 section-fade">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center fade-text mb-12">Kontakta Oss</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="card-gradient rounded-2xl p-8 shadow-xl">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-6">Kontaktinformation</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-amber-700 w-6 mr-4"></i>
+                                <a href="tel:0700315655" class="text-amber-800 hover:text-amber-900 font-medium">
+                                    0700-315655
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="card-gradient rounded-2xl p-8 shadow-xl">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-6">Följ Oss</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/profile.php?id=61576186515047"
+                               class="social-icon text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg"
+                               target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/la_gaterie_koppen/?next=%2F"
+                               class="social-icon text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg"
+                               target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://g.page/r/CcYErgrmY_M7EAE/review"
+                               class="social-icon text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg"
+                               target="_blank">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                        <p class="text-amber-800 mt-4">
+                            Följ oss på sociala medier för de senaste nyheterna och erbjudandena!
+                        </p>
+                    </div>
+                </div>
+               
+                <div class="text-center mt-12">
+                    <div class="card-gradient rounded-2xl p-8 shadow-xl inline-block">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-4">Lämna en Recension</h3>
+                        <p class="text-amber-800 mb-6">Har du provat våra produkter? Vi uppskattar din feedback!</p>
+                        <a href="https://g.page/r/CcYErgrmY_M7EAE/review"
+                           class="btn-gradient text-white px-8 py-3 rounded-lg font-semibold shadow-lg inline-block"
+                           target="_blank">
+                            <i class="fas fa-star mr-2"></i>Skriv Recension
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="hero-gradient py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center mb-6 md:mb-0">
+                    <img src="https://page1.genspark.site/v1/base64_upload/eb4faff1c582b45d0455b7fc6fb24ecf" alt="La Gâterie" class="w-12 h-12 mr-3 rounded-lg">
+                    <div>
+                        <h4 class="text-xl font-bold text-amber-900">La Gâterie</h4>
+                        <p class="text-amber-800">Gourmetmat i koppar</p>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-amber-800 mb-2">Kontakta oss: <a href="tel:0700315655" class="font-semibold hover:text-amber-900">0700-315655</a></p>
+                    <p class="text-amber-700 text-sm">© 2024 La Gâterie. Alla rättigheter förbehållna.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply animation to elements
+        document.querySelectorAll('.card-gradient').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
